@@ -1,0 +1,638 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\SOLIT
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 120
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 814
+    content: "\e[?9001h\e[?1004h"
+  - delay: 434
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 21
+    content: "\e[?25l\e[6;1H\e[?25h"
+  - delay: 561
+    content: 'PS C:\Users\SOLIT> '
+  - delay: 16522
+    content: "\e[?25l"
+  - delay: 11
+    content: "\e[91m\e[6;18H> \e[37m&\e[?25h"
+  - delay: 16
+    content: "\e[?25l\e[m\e[6;18H> \e[37m& \e[36m\"C:\\Program Files\\MariaDB 12.0\\bin\\mysql.exe\" "
+  - delay: 16
+    content: "\e[m\e[37m\e[6;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\bin\\mysql.exe\" \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 2209
+    content: "\e[m"
+  - delay: 11
+    content: "\r\n"
+  - delay: 123
+    content: E
+  - delay: 20
+    content: 'nter password: '
+  - delay: 2016
+    content: '*'
+  - delay: 359
+    content: '*'
+  - delay: 209
+    content: '*'
+  - delay: 147
+    content: '*'
+  - delay: 435
+    content: '*'
+  - delay: 238
+    content: '*'
+  - delay: 395
+    content: '*'
+  - delay: 216
+    content: '*'
+  - delay: 145
+    content: '*'
+  - delay: 400
+    content: '*'
+  - delay: 382
+    content: '*'
+  - delay: 415
+    content: '*'
+  - delay: 172
+    content: '*'
+  - delay: 158
+    content: '*'
+  - delay: 383
+    content: '*'
+  - delay: 235
+    content: '*'
+  - delay: 242
+    content: '*'
+  - delay: 182
+    content: "\r\n"
+  - delay: 201
+    content: ERROR 1045 (28000)
+  - delay: 12
+    content: ": Access denied for user 'root'@'localhost' (using password: YES)\r\n"
+  - delay: 59
+    content: 'PS C:\Users\SOLIT> '
+  - delay: 4428
+    content: "\e[?25l"
+  - delay: 20
+    content: "\e[91m\e[9;18H> \e[37m& \e[36m\"\e[?25h"
+  - delay: 15
+    content: "\e[?25l\e[m\e[9;18H> \e[37m& \e[36m\"C:\\Program Files\\MariaDB 12.0\\bin\\mysql.exe\" \e[90m-u \e[37mroot -"
+  - delay: 16
+    content: "\e[m\e[37m\e[9;20H& \e[36m\"C:\\Program Files\\MariaDB 12.0\\bin\\mysql.exe\" \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 191
+    content: "\e[m"
+  - delay: 12
+    content: "\r\n"
+  - delay: 51
+    content: E
+  - delay: 11
+    content: 'nter password: '
+  - delay: 1734
+    content: '*'
+  - delay: 303
+    content: '*'
+  - delay: 257
+    content: '*'
+  - delay: 303
+    content: '*'
+  - delay: 270
+    content: '*'
+  - delay: 317
+    content: '*'
+  - delay: 269
+    content: '*'
+  - delay: 214
+    content: '*'
+  - delay: 375
+    content: '*'
+  - delay: 541
+    content: '*'
+  - delay: 2154
+    content: '*'
+  - delay: 217
+    content: '*'
+  - delay: 182
+    content: '*'
+  - delay: 574
+    content: '*'
+  - delay: 270
+    content: '*'
+  - delay: 224
+    content: '*'
+  - delay: 283
+    content: "\r\n"
+  - delay: 127
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 23
+    content: "\r\n"
+  - delay: 16
+    content: "\e[?25lYour MariaDB connection id is 4\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\e[15;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[17;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[19;1HMariaDB [(none)]> \e[?25h"
+  - delay: 13164
+    content: show databases;
+  - delay: 850
+    content: "\r\n"
+  - delay: 29
+    content: +-----------------------+
+  - delay: 11
+    content: "\r\n| Database              |\r\n+-----------------------+\r\n| information_schema    |\r\n| mysql                 |\r\n| performance_schema    |\r\n| perpus                |\r\n| perpustakaan          |\r\n| perpustakaan_lanjutan |\r\n| perpustakaan_lutfi    |\r\n| sembako               |\r\n| sys                   |\r\n+-----------------------+\r\n9 rows in set (0.030 sec)\r\n\nMariaDB [(none)]>\e[1C"
+  - delay: 14416
+    content: u
+  - delay: 134
+    content: s
+  - delay: 233
+    content: e
+  - delay: 1843
+    content: ' '
+  - delay: 997
+    content: p
+  - delay: 129
+    content: e
+  - delay: 214
+    content: r
+  - delay: 233
+    content: p
+  - delay: 903
+    content: u
+  - delay: 167
+    content: s
+  - delay: 611
+    content: t
+  - delay: 170
+    content: a
+  - delay: 5222
+    content: "\b \b"
+  - delay: 519
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 35
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 1073
+    content: create database perpustakaan; use perpustakaan;
+  - delay: 3952
+    content: "\b"
+  - delay: 1335
+    content: "s;\b"
+  - delay: 126
+    content: "\b"
+  - delay: 183
+    content: "\b"
+  - delay: 148
+    content: "\b"
+  - delay: 520
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 100
+    content: "\b"
+  - delay: 203
+    content: "\b"
+  - delay: 167
+    content: "\b"
+  - delay: 179
+    content: "\b"
+  - delay: 167
+    content: "\b"
+  - delay: 171
+    content: "\b"
+  - delay: 158
+    content: "\b"
+  - delay: 421
+    content: "\e[?25ls; use perpustakaans;\e[30;48H\e[?25h"
+  - delay: 303
+    content: "\r\n"
+  - delay: 15
+    content: "Query OK, 1 row affected (0.014 sec)\r\n"
+  - delay: 5
+    content: "\nDatabase changed\r\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 7622
+    content: "CREATE TABLE buku (no INT AUTO_INCREMENT PRIMARY KEY, judul VARCHAR(100), pengarang VARCHAR(100\r\n\e[29;120H0), penerbit VARCHAR(100), tahun_terbit YEAR); INSERT INTO buku (judul, pengarang, penerbit, tahun_terbit) VALUES ('aku h\e[?25l\r\n\e[29;120Hhebat','luqman hakim','gramedia',2005),('bunga mawar','burhan','kompas',2003),('terjun bebas','agoy','media tap',2002);  \e[30;119H\e[?25h"
+  - delay: 6249
+    content: "\r\n"
+  - delay: 76
+    content: "Query OK, 0 rows affected (0.076 sec)\r\n"
+  - delay: 14
+    content: |+
+
+  - delay: 14
+    content: "Query OK, 3 rows affected (0.028 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 29268
+    content: Bye
+  - delay: 14
+    content: "\r\n"
+  - delay: 54
+    content: 'PS C:\Users\SOLIT> '
+  - delay: 16472
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[91m\e[30;18H> \e[37m& \e[?25h"
+  - delay: 16
+    content: "\e[?25l\e[m\e[37m\e[30;20H& \e[36m\"C\e[?25h"
+  - delay: 16
+    content: "\e[?25l\e[m\e[30;18H> \e[37m& \e[36m\"C:\\Program Files\\MariaDB 12.0\\bin\\mysql.exe\" \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 1087
+    content: "\e[m"
+  - delay: 11
+    content: "\r\n"
+  - delay: 53
+    content: E
+  - delay: 9
+    content: 'nter password: '
+  - delay: 2815
+    content: '*'
+  - delay: 162
+    content: '*'
+  - delay: 181
+    content: '*'
+  - delay: 174
+    content: '*'
+  - delay: 303
+    content: '*'
+  - delay: 354
+    content: '*'
+  - delay: 215
+    content: '*'
+  - delay: 153
+    content: '*'
+  - delay: 316
+    content: '*'
+  - delay: 446
+    content: '*'
+  - delay: 462
+    content: '*'
+  - delay: 166
+    content: '*'
+  - delay: 149
+    content: '*'
+  - delay: 428
+    content: '*'
+  - delay: 207
+    content: '*'
+  - delay: 267
+    content: '*'
+  - delay: 770
+    content: "\r\n"
+  - delay: 49
+    content: "Welcome to the MariaDB monitor.  Commands end with ; or \\g.\r\nYour MariaDB connection id is 5\r\nServer version: 12.0.2-MariaDB mariadb.org binary distribution\r\n\nCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\r\n\nType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\r\n"
+  - delay: 16
+    content: "\nMariaDB [(none)]>\e[1C"
+  - delay: 2267
+    content: u
+  - delay: 1559
+    content: s
+  - delay: 409
+    content: e
+  - delay: 1283
+    content: ' '
+  - delay: 558
+    content: p
+  - delay: 115
+    content: e
+  - delay: 181
+    content: r
+  - delay: 100
+    content: p
+  - delay: 266
+    content: u
+  - delay: 265
+    content: s
+  - delay: 206
+    content: t
+  - delay: 193
+    content: a
+  - delay: 652
+    content: k
+  - delay: 101
+    content: a
+  - delay: 142
+    content: a
+  - delay: 107
+    content: 'n'
+  - delay: 348
+    content: s
+  - delay: 1073
+    content: ;
+  - delay: 183
+    content: "\r\nDatabase changed"
+  - delay: 12
+    content: "\r\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 7909
+    content: SELECT * FROM buku;
+  - delay: 1408
+    content: "\r\n"
+  - delay: 16
+    content: "+----+--------------+--------------+-----------+--------------+\r\n| no | judul        | pengarang    | penerbit  | tahun_terbit |\r\n+----+--------------+--------------+-----------+--------------+\r\n|  1 | aku\e[1Chebat    | luqman hakim | gramedia  |         2005 |\r\n|  2 | bunga mawar  | burhan       | kompas    |         2003 |\r\n|  3 | terjun bebas | agoy         | media tap |         2002 |\r\n+----+--------------+--------------+-----------+--------------+\r\n3 rows in set (0.015 sec)\r\n"
+  - delay: 6
+    content: "\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 7993
+    content: "CREATE TABLE anggota (id_anggota INT AUTO_INCREMENT PRIMARY KEY, nama VARCHAR(100), alamat VARC\r\n\e[29;120HCHAR(200)); INSERT INTO anggota (nama, alamat) VALUES ('luqman hakim', 'Jl. Kenanga No. 8'), ('rehan caur', 'Jl. legoso N\r\n\e[29;120HNo. 3');"
+  - delay: 623
+    content: "\r\n"
+  - delay: 24
+    content: "Query OK, 0 rows affected (0.023 sec)\r\n\nQuery OK, 2 rows affected (0.003 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 11
+    content: "\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 5448
+    content: select * anggota;
+  - delay: 825
+    content: "\r\n"
+  - delay: 10
+    content: "ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\r\n\e[29;120Hion for the right syntax to use near 'anggota' at line 1"
+  - delay: 8
+    content: "\r\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 26435
+    content: s
+  - delay: 174
+    content: h
+  - delay: 882
+    content: o
+  - delay: 204
+    content: w
+  - delay: 637
+    content: ' '
+  - delay: 248
+    content: t
+  - delay: 156
+    content: a
+  - delay: 114
+    content: b
+  - delay: 461
+    content: l
+  - delay: 149
+    content: e
+  - delay: 228
+    content: s
+  - delay: 923
+    content: ;
+  - delay: 820
+    content: "\r\n"
+  - delay: 11
+    content: "+-------------------------+\r\n| Tables_in_perpustakaans |\r\n+-------------------------+\r\n| anggota                 |\r\n| buku                    |\r\n+-------------------------+\r\n2 rows in set (0.011 sec)\r\n\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 2033
+    content: s
+  - delay: 209
+    content: e
+  - delay: 133
+    content: l
+  - delay: 107
+    content: e
+  - delay: 1749
+    content: c
+  - delay: 127
+    content: t
+  - delay: 289
+    content: ' '
+  - delay: 2560
+    content: '*'
+  - delay: 952
+    content: ' '
+  - delay: 2223
+    content: a
+  - delay: 200
+    content: 'n'
+  - delay: 240
+    content: g
+  - delay: 140
+    content: g
+  - delay: 902
+    content: o
+  - delay: 380
+    content: t
+  - delay: 160
+    content: a
+  - delay: 2916
+    content: ;
+  - delay: 857
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server versi\r\n\e[29;120Hion for the right syntax to use near 'anggota' at line 1"
+  - delay: 20
+    content: "\r\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 24933
+    content: select * anggota;
+  - delay: 459
+    content: "\b"
+  - delay: 160
+    content: "\b"
+  - delay: 519
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 1023
+    content: "\e[1C"
+  - delay: 397
+    content: "\e[?25lfanggota;\e[30;36H\e[?25h"
+  - delay: 436
+    content: "\e[?25lranggota;\e[30;37H\e[?25h"
+  - delay: 67
+    content: "\e[?25loanggota;\e[30;38H\e[?25h"
+  - delay: 441
+    content: "\e[?25lmanggota;\e[30;39H\e[?25h"
+  - delay: 269
+    content: "\e[?25l anggota;\e[30;40H\e[?25h"
+  - delay: 426
+    content: "\r\n+------------+--------------+-------------------+\r\n| id_anggota | nama         | alamat            |\r\n+------------+--------------+-------------------+\r\n|          1 | luqman hakim | Jl. Kenanga No. 8 |\r\n|          2 | rehan caur   | Jl. legoso No. 3  |\r\n+------------+--------------+-------------------+\r\n2 rows in set (0.001 sec)\r\n\n"
+  - delay: 15
+    content: 'MariaDB [perpustakaans]> '
+  - delay: 47849
+    content: "CREATE TABLE peminjaman (id_peminjaman INT AUTO_INCREMENT PRIMARY KEY, id_anggota INT, id_buku \r\n\e[29;120H INT, tanggal_pinjam DATE, FOREIGN KEY (id_anggota) REFERENCES anggota(id_anggota)); INSERT INTO peminjaman (id_anggota, \r\n\e[29;120H id_buku, tanggal_pinjam) VALUES (1, 10, '2025-02-03'), (2, 5, '2025-02-04');"
+  - delay: 1115
+    content: "\r\n"
+  - delay: 22
+    content: "Query OK, 0 rows affected (0.022 sec)\r\n"
+  - delay: 5
+    content: "\nQuery OK, 2 rows affected (0.005 sec)\r\nRecords: 2  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 15
+    content: "\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 6221
+    content: select * from pemijaman;
+  - delay: 2777
+    content: "\b"
+  - delay: 199
+    content: "\b"
+  - delay: 167
+    content: "\b"
+  - delay: 145
+    content: "\b"
+  - delay: 237
+    content: "\b"
+  - delay: 418
+    content: "\b"
+  - delay: 906
+    content: "\e[?25lnjaman;\e[30;45H\e[?25h"
+  - delay: 395
+    content: "\r\n+---------------+------------+---------+----------------+\r\n| id_peminjaman | id_anggota | id_buku | tanggal_pinjam |\r\n+---------------+------------+---------+----------------+\r\n|             1 |          1 |      10 | 2025-02-03     |\r\n|             2 |          2 |       5 | 2025-02-04     |\r\n+---------------+------------+---------+----------------+\r\n2 rows in set (0.001 sec)\r\n"
+  - delay: 5
+    content: "\nMariaDB [perpustakaans]>\e[1C"
+  - delay: 92574
+    content: exit
+  - delay: 852
+    content: "\r\nBye"
+  - delay: 21
+    content: "\r\nPS C:\\Users\\SOLIT>\e[1C"
+  - delay: 8636
+    content: "\e[?25l"
+  - delay: 9
+    content: "\e[93m^D\e[?25h"
+  - delay: 1717
+    content: "\e[m"
+  - delay: 8
+    content: "\r\n"
+  - delay: 7640
+    content: "\e[38;5;9m : The term '' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the \e[m\r\n\e[38;5;9mspelling of the name, or if a path was included, verify that the path is correct and try again.\e[m\r\n\e[38;5;9mAt line:1 char:1\e[m\r\n\e[38;5;9m+\e[1C\e[m\r\n\e[38;5;9m+ ~\e[m\r\n\e[38;5;9m    + CategoryInfo          : ObjectNotFound: (:String) [], CommandNotFoundException\e[m\r\n\e[38;5;9m    + FullyQualifiedErrorId : CommandNotFoundException\e[m\r\n\e[38;5;9m\e[1C\e[m\r\n"
+  - delay: 44
+    content: 'PS C:\Users\SOLIT> '
+  - delay: 9244
+    content: "\e[?25l"
+  - delay: 14
+    content: "\e[93mexi"
+  - delay: 15
+    content: "\e[m\e[92m\e[30;20Hexit\e[?25h"
+  - delay: 887
+    content: "\e[m"
+  - delay: 24
+    content: "\r\n"
